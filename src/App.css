@@ -5,6 +5,27 @@
   text-align: center;
 }
 
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  background: #000;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  width: 300px;
+  border-radius: 0;
+}
+
+.icon {
+  display: flex;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

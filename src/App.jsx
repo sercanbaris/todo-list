@@ -1,16 +1,12 @@
-import { useState } from 'react';
-import './App.css';
+import "./App.css";
+import Todo from "./Todo";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
-        <h1>To Do List</h1>
-
+        <Todo />
       </div>
-
     </>
   );
 }
