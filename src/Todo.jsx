@@ -9,6 +9,7 @@ export default function Todo() {
     { id: 1, item: "Bu projeyi tamamla." },
     { id: 2, item: "Diğer Projeye Geç" },
   ]);
+  const [edit, setEdit] = useState(false);
 
   const itemEkle = () => {
     if (inputValue.trim() !== "") {
@@ -44,7 +45,10 @@ export default function Todo() {
         {todoList.map((eleman) => (
           <div key={eleman.id} className="todo-item">
             <div className="items">{eleman.item}</div>
-            <MdModeEdit className="icon edit-icon" />
+            <MdModeEdit
+              className="icon edit-icon"
+              onClick={() => alert("basıldı")}
+            />
             <FaTrash
               className="icon delete-icon"
               onClick={() => sil(eleman.id)}
